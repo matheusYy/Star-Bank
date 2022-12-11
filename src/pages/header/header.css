@@ -1,0 +1,38 @@
+#header {
+  display: flex;
+  height: 8vh;
+  align-items: center;
+  padding: 1vh 3%;
+}
+
+.button-header {
+  padding: 5px;
+  width: 13vw;
+  height: 4vh;
+  border-radius: 9000px;
+  background-color: black;
+  color: white;
+}
+.containerMenu {
+  flex: 1;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  gap: 5px;
+}
+.drop-content {
+  width: 400px;
+  height: 400px;
+  background-color: #000
+}
+
+.icon-menu {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  display: inline;
+  background: transparent;
+  border: 0;
+  color: white; 
+  align-self: center;
+}

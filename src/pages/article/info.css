@@ -1,0 +1,57 @@
+.infoText {
+ background-color: #000;
+ color: #fff;
+ font-size: var(--fontForInfoTitle);
+}
+
+.infoGrid {
+ display: grid;
+ width: 100%;
+ height: 60vh;
+ grid-template-rows: auto auto auto;
+ grid-template-columns: auto auto auto;
+ background-color: orange;
+ gap: 1px;
+}
+
+.infoGrid > div:nth-of-type(1) {
+ background-color: blue;
+}
+.infoGrid > div:nth-of-type(2) {
+ background-color: rgb(73, 179, 255);
+ grid-column: 2/4;
+ grid-row: 1/1;
+}
+.infoGrid > div:nth-of-type(3) { /* container style cards e rockStar */
+ grid-column: 1/3;
+ grid-row: 2/4;
+}
+.gapOfInfo { /* gapOfInfo são os filhos do container que está cards e rockStar */
+ display: flex;
+ align-items: center;
+ gap: 1px;
+}
+.gapOfInfo > div:nth-of-type(1) { /* flexx filho do grid of type 3,  */
+ flex: 1 10%;
+ height: 100%;
+ background-color: red;
+} 
+.gapOfInfo > div:nth-of-type(2) { /* segundo filho de grid of type 3 */
+ flex: 1;
+ height: 100%;
+ background-color: rgb(105, 19, 253);
+}
+.infoGrid > div:nth-of-type(4) { /* footer right, appStar, grid 3/4 row 2/2 */
+ background-color: rgb(196, 249, 177);
+ grid-column: 3/4;
+ grid-row: 2/2;
+}
+.infoGrid > div:nth-of-type(5) { /* footer right, pontos, grid 3/4 */
+ background-color: #ff7a8b;
+ grid-column: 3/4;
+ grid-row: 3/4;
+}
+.infoGrid > div:nth-of-type(6) {
+ background-color: #7e57ff;
+}
+

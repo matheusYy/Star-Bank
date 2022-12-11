@@ -1,0 +1,50 @@
+.containerArticleInit {
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+ height: 100vh;
+}
+
+.divApresentation {
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+ align-items: center;
+ width: 80%;
+}
+.divApresentation > div > h1 {
+ font-family: NiramitSemiBold;
+ font-size: var(--fontTitleOne);
+}
+.divApresentation > div > h2 {
+ font-family: NiramitSemiBold;
+ font-size: var(--fontTitleTwo);
+ padding: 10px;
+}
+.tittleContainer {
+ height: 20vh;
+ text-align: center;
+
+}
+.divApresentation > p {
+ font-family: NiramitBold;
+}
+
+.buttonStart {
+ background-color: black;
+ text-align: center;
+ color: #fff;
+ border-radius: 50px;
+ height: 40px;
+ width: 18vw;
+}
+
+.waveContainer {
+ position: absolute;
+ background-image: url(../../assets/waves-layout.svg);
+ width: 100%;
+ height: 18vh;
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}

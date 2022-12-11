@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "NiramitSemiBold";
+  src: url("./fonts/Niramit-SemiBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "NiramitBold";
+  src: url("./fonts/Niramit-Bold.ttf") format("opentype");
+  font-weight: bold;
+}
+
+:root {
+  --fontTitleOne: 2.5em;
+  --fontTitleTwo: 2em;
+  --fontWeightPd: 1.2em;
+  --fontForInfoTitle: 0.7em;
+  --fontColorLight: #fff;
+  --fontColorDark: #000;
+  --darkPurple: #845EC2;
+  --yellow: #FFCC47;
+  --orange: #F0803C;
+  --grey: #1E1E1E;
+  --black: #000;
+  --white: #fff;
+  
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #000;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-style: none;
+  list-style: none; 
+}
+
+html {
+  background-color: #fff; 
+}
+
