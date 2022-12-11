@@ -1,15 +1,15 @@
 import './apresentation.css';
+import './apresentationTwo.css';
+import RetangleIcon from './fragmentos/retangleIcon';
+import CompartilheContent from './fragmentos/compartilheContent';
+import Social from './fragmentos/social';
 export default function Apresentaition() {
  return (
   <aside className="containerGridApresentation">
    <div><strong>STAR BANK</strong></div>
    <div><strong>NOVIDADES</strong><span className="iconHeart"></span></div>
    <div className="containerIconDiv">
-    <div className="flexForIconDiv">
-      <span className="iconSpanForDivIcon"></span>
-       <p>Annie</p></div>
-     <div>
-    </div>
+    <RetangleIcon /> {/* retangulos em midia */}
     <span className="textForContainerIcon">
      <strong>MIDIA</strong>
      <p>Lembranças dos nossos eventos compartilhe
@@ -18,14 +18,18 @@ export default function Apresentaition() {
      </p>
     </span>
    </div>
-   <div></div>
-   <div></div>
+   <div className="eventosContent"><strong>EVENTOS</strong></div> {/* retangulo a direita grid */}
+   <div></div> {/* svg linhas pretas */}
    <div>
     <aside>
      <p>Hey, dê uma olhada nas nossas redes sociais</p>
     </aside>
+    <Social />
    </div>
-   <div></div>
+   <div className="participeContent">
+    <strong>PARTICIPE</strong>
+    <CompartilheContent /> 
+  </div>
   </aside>
  )
 }

@@ -1,24 +1,20 @@
-.infoText {
- background-color: #000;
- color: #fff;
- font-size: var(--fontForInfoTitle);
-}
 
 .infoGrid {
  display: grid;
  width: 100%;
- height: 60vh;
- grid-template-rows: auto auto auto;
- grid-template-columns: auto auto auto;
- background-color: orange;
+ height: 100%;
+ grid-template-columns: auto auto 25vw;
+ grid-template-rows: 45vh 30vh 20vh;
+ background-color: var(--darkPurple);
  gap: 1px;
+ margin-top: 5vh
 }
 
 .infoGrid > div:nth-of-type(1) {
- background-color: blue;
+ background-color: var(--darkPurple);
 }
 .infoGrid > div:nth-of-type(2) {
- background-color: rgb(73, 179, 255);
+ background-color:  var(--grey);
  grid-column: 2/4;
  grid-row: 1/1;
 }
@@ -34,24 +30,25 @@
 .gapOfInfo > div:nth-of-type(1) { /* flexx filho do grid of type 3,  */
  flex: 1 10%;
  height: 100%;
- background-color: red;
+ background-color: var(--grey);
 } 
 .gapOfInfo > div:nth-of-type(2) { /* segundo filho de grid of type 3 */
  flex: 1;
  height: 100%;
- background-color: rgb(105, 19, 253);
+ background-color: var(--grey);
 }
 .infoGrid > div:nth-of-type(4) { /* footer right, appStar, grid 3/4 row 2/2 */
- background-color: rgb(196, 249, 177);
+ background-color:  var(--grey);
  grid-column: 3/4;
  grid-row: 2/2;
 }
 .infoGrid > div:nth-of-type(5) { /* footer right, pontos, grid 3/4 */
- background-color: #ff7a8b;
+ background-color:  var(--grey);
  grid-column: 3/4;
  grid-row: 3/4;
 }
-.infoGrid > div:nth-of-type(6) {
- background-color: #7e57ff;
-}
+/* animation */
 
+.infoGrid > div {
+ transition: all 0.4s ease;
+}

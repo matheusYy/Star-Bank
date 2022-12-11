@@ -24,8 +24,6 @@ export default function Main() {
    COMEÇAR
    </button>
   </div>
-  <div className="waveContainer">
-  </div>
   <Apresentation /> {/* layout grid  */}
  </article> 
  );

@@ -1,0 +1,27 @@
+.containerGuy {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-flow: column;
+ padding: 15px 0px 0px 5px;
+ color: var(--fontColorLight);
+}
+.containerGuy > h3 {
+ font-size: 1.2em;
+
+}
+.containerGuy > p {
+ font-size: 1em;
+}
+
+
+.contentImageGuy {
+ width: 82%;
+ height: 75%;
+ background-image: url(../../assets/peoples/services-guy.svg);
+ background-repeat: no-repeat;
+ background-position: bottom;
+ background-size: contain;
+ align-self: end;
+ display: inline;
+}

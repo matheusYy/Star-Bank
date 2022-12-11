@@ -55,7 +55,8 @@
  grid-row: 2/6;
  background-image: url(../../assets/listras.svg);
  background-repeat: no-repeat;
- background-position: center;
+ background-position: top;
+ background-size: cover;
 }
 .containerGridApresentation > div:nth-of-type(6) {
  grid-column: 4/6;
@@ -88,37 +89,13 @@
 
  
 }
-.containerIconDiv > div {
- width: 100%;
- height: 6vh;
- background-color: var(--black);
- margin-top: 10px;
- border-radius: 10px;
-}
+
 .textForContainerIcon {
  text-align: center;
  width: 100%;
  height: 5vh;
 } 
-.containerIconDiv > div > p {
- color: white;
- width: 60%;
-}
-.iconSpanForDivIcon {
- border-radius: 5px;
- width: 30px;
- height: 30px;
- background-image: url(../../assets/iconHairPink.svg);
- background-repeat: no-repeat;
- background-size: contain;
- background-position: center;
-}
-.flexForIconDiv {
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 10px;
-}
+
 /* configuraçao de estado para as divs */
 
 

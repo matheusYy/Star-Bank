@@ -1,0 +1,12 @@
+.eventosContent {
+ display: flex;
+ align-items: flex-start;
+ justify-content: center;
+}
+.participeContent {
+ color: var(--fontColorLight);
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+ background-color: var(--orange);
+}
