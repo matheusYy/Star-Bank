@@ -3,7 +3,7 @@
  color: var(--fontColorLight);
  font-size: var(--fontForInfoTitle);
  position: relative;
- top: 26vh;
+ top: 154px;
  display: flex;
  gap: 10px;
 }

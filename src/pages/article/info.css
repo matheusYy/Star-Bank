@@ -11,16 +11,21 @@
 }
 
 .infoGrid > div:nth-of-type(1) {
- background-color: var(--darkPurple);
+ background-color:  var(--grey);
+ grid-column: 1/2;
+ grid-row: 1/1;
+ border-bottom-right-radius: 5px;
 }
 .infoGrid > div:nth-of-type(2) {
  background-color:  var(--grey);
  grid-column: 2/4;
  grid-row: 1/1;
+ border-bottom-left-radius: 5px;
 }
 .infoGrid > div:nth-of-type(3) { /* container style cards e rockStar */
  grid-column: 1/3;
  grid-row: 2/4;
+ border-radius: 5px;
 }
 .gapOfInfo { /* gapOfInfo são os filhos do container que está cards e rockStar */
  display: flex;
@@ -41,11 +46,15 @@
  background-color:  var(--grey);
  grid-column: 3/4;
  grid-row: 2/2;
+ border-top-left-radius: 5px; 
+ border-bottom-left-radius: 5px; 
 }
 .infoGrid > div:nth-of-type(5) { /* footer right, pontos, grid 3/4 */
  background-color:  var(--grey);
  grid-column: 3/4;
  grid-row: 3/4;
+ border-top-left-radius: 5px; 
+ border-bottom-left-radius: 5px; 
 }
 /* animation */
 

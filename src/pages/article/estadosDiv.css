@@ -1,0 +1,8 @@
+.infoGrid > div:hover {
+ background-color: var(--darkPurple);
+ box-shadow: 0 0 10px var(--darkPurple);
+}
+.infoGrid > div:nth-of-type(1):hover {
+ background-color: var(--orange);
+ box-shadow: 0 0 20px var(--orange);
+}
