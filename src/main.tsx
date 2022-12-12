@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom/client';
 import Header from './pages/header/header';
 import ArticleApresentation from './pages/main/article';
 import Info from './pages/article/info';
+import ArticleMid from './pages/subArticle/main';
+import Footer from './pages/footer/footer';
 //styles global
 import './index.css';
 
@@ -17,5 +19,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
    <ArticleApresentation />
    <Info />
+   <ArticleMid />
+   <Footer />
   </React.StrictMode>
 );
