@@ -1,0 +1,22 @@
+.pontos-container {
+ height: 95%;
+ padding: 4px;
+ color: var(--fontColorLight);
+ background-image: url(../../../assets/presente.svg);
+ background-repeat: no-repeat;
+ background-size: 45%;
+ background-position: right;
+}
+.pontos-container > h3 {
+ width: 70%;
+}
+.pontos-container > p {
+ width: 100%;
+
+}
+.image-pontos {
+ width: 75%;
+ margin-left: 12%;
+ height: 72%;
+
+}

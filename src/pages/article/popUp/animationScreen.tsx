@@ -1,27 +1,63 @@
 import './animationScreen.css';
-import { AnimatePresence, motion } from 'framer-motion'
-export default function Animation(props: any) {
+import Services from './services';
+import Faculdades from './faculdades';
+import Cards from './cards';
+import RockStar from './rockstar';
+import StarApp from './starApp';
+import Pontos from './pontos';
+import { motion } from 'framer-motion'
+import { ReactComponentElement } from 'react';
+
+export default function Animation(props: any): JSX.Element {
+
  const variant = {
   montead: {
    opacity: 1,
-   y: [0, -5]
+   y: [0, -7],
+   transition: {
+    type: "spring", duration: 0.3, stiffeness: 100
+   }
   }
  }
+/* teste logico para render de cada elemento da grid */
+ function Is(): JSX.Element {
+  if (props.faculdade == true) {
+    return <Faculdades />
+  } else if (props.cards == true) {
+    return <Cards />
+  } else if (props.rockstar == true) {
+    return <RockStar />
+  } else if(props.starApp == true) {
+    return <StarApp />
+  } else if(props.pontos == true) {
+    return <Pontos />
+  } else if(props.servicos == true) {
+    return <Services />
+  } else {
+    return <h2>Oh, deu algo errado...</h2>
+  }
+ } 
  return (
 
-  <motion.div className="containerPopUp" 
+  <motion.div 
+   data-open="open"
+   className="containerPopUp" 
    initial={{opacity: 0}} 
-    animate="montead" 
-     exit={{opacity: 0}}
+   animate="montead" 
+   exit={{opacity: 0}}
    variants={variant}
      >
    <div className="container-items-pop-up">
     <input type="button" value="" onClick={props.desable}/>
     <div className="childPopUp">
-     <p>{props.name}</p>
+     {
+      Is()
+     }
     </div>
    </div>
+
   </motion.div>
 
  )
 }
+

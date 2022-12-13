@@ -3,7 +3,7 @@
  display: grid;
  width: 100%;
  height: 100%;
- grid-template-columns: auto auto 25vw;
+ grid-template-columns: 44vw auto 25vw;
  grid-template-rows: 45vh 30vh 20vh;
  background-color: var(--darkPurple);
  gap: 1px;

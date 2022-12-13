@@ -1,9 +1,9 @@
 import './article.css';
 import Apresentation from './apresentation';
-
+import Article from '../article/mainInfo'
 export default function Main() {
  return (
- <article  className="containerArticleInit">
+ <article  className="containerArticleInit" data-theme="a">
   <div  className="divApresentation">
     <div className="tittleContainer">
      <h1>Comece rapido com Star</h1>

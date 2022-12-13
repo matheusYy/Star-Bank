@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 //componentes
 import Header from './pages/header/header';
 import ArticleApresentation from './pages/main/article';
-import Info from './pages/article/info';
+import Info from './pages/article/mainInfo';
 import ArticleMid from './pages/subArticle/main';
 import Footer from './pages/footer/footer';
 //styles global

@@ -5,6 +5,12 @@
  display: flex;
  flex-flow: column;
 }
+.footer-container > p {
+ margin-top: 25px;
+ width: 75%;
+ text-align: center;
+ align-self: center;
+}
 .footer-end {
  width: 100%;
  background-color: var(--dark);
@@ -17,10 +23,14 @@
 .social {
  display: flex;
  flex-flow: column;
- gap: 2px;
+ gap: 20px;
  align-items: center;
  justify-content: center;
  margin-top: 10px;
+ flex: 35%;
+}
+.social > span {
+ text-align: center;
 }
 .curtiu-site {
  align-self: flex-start;
@@ -28,7 +38,9 @@
  text-align: center;
  display: flex;
  flex-flow: column;
+ align-items: center;
  gap: 5px;
+ flex: 25%;
 }
 .projetos-e-contato {
  display: flex;
@@ -36,8 +48,11 @@
  gap: 2px;
  align-items: center;
  justify-content: center;
- margin-top: 50px;
+ margin-top: 10px;
+ flex: 35%;
 }
-
+.projetos-e-contato > span {
+ text-align: center;
+}
 /* ADD EMOJI */
 

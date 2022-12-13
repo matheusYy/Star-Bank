@@ -1,0 +1,22 @@
+.cards-container {
+ height: 100%;
+ padding: 4px;
+ color: var(--fontColorLight);
+ background-image: url(../../../assets/cards-black-blue.svg);
+ background-repeat: no-repeat;
+ background-size: 95%;
+ background-position: bottom;
+}
+.cards-container > h3 {
+ width: 70%;
+}
+.cards-container > p {
+ width: 75%;
+
+}
+.image-cards {
+ width: 75%;
+ margin-left: 12%;
+ height: 72%;
+
+}

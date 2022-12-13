@@ -1,0 +1,22 @@
+.app-container {
+ height: 95%;
+ padding: 4px;
+ color: var(--fontColorLight);
+ background-image: url(../../../assets/star-insignia.svg);
+ background-repeat: no-repeat;
+ background-size: 65%;
+ background-position: right;
+}
+.app-container > h3 {
+ width: 70%;
+}
+.app-container > p {
+ width: 100%;
+
+}
+.image-app {
+ width: 75%;
+ margin-left: 12%;
+ height: 72%;
+
+}

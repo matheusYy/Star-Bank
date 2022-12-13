@@ -1,0 +1,22 @@
+.rock-star-container {
+ height: 95%;
+ padding: 4px;
+ color: var(--fontColorLight);
+ background-image: url(../../../assets/rock-star-card.svg);
+ background-repeat: no-repeat;
+ background-size: 85%;
+ background-position: bottom;
+}
+.rock-star-container > h3 {
+ width: 70%;
+}
+.rock-star-container > p {
+ width: 100%;
+
+}
+.image-rock-star {
+ width: 75%;
+ margin-left: 12%;
+ height: 72%;
+
+}

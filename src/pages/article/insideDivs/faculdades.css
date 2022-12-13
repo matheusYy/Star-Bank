@@ -1,0 +1,22 @@
+.faculdade-container {
+ height: 100%;
+ padding: 4px;
+ color: var(--fontColorLight);
+ background-image: url(../../../assets/peoples/faculdades.svg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: right;
+}
+.faculdade-container > h3 {
+ width: 70%;
+}
+.faculdade-container > p {
+ width: 65%;
+
+}
+.image-faculdade {
+ width: 75%;
+ margin-left: 12%;
+ height: 72%;
+
+}
