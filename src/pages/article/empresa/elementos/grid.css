@@ -1,0 +1,14 @@
+.grid-empresa {
+ width: 100%;
+ height: 82vh;
+ background-color: var(--grey);
+ padding-top: 2vh;
+ color: var(--fontColorLight);
+}
+.grid-items-empresa {
+ display: grid;
+ grid-template-columns: auto auto;
+ grid-template-rows: auto auto;
+ height: 100%;
+ padding-top: 5vh;
+}

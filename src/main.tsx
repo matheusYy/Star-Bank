@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 //componentes
 import Header from './pages/header/header';
 import ArticleApresentation from './pages/main/article';
-import Info from './pages/article/mainInfo';
+import { Main } from './pages/article/main';
 import ArticleMid from './pages/subArticle/main';
 import Footer from './pages/footer/footer';
 //styles global
@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('header') as HTMLElement).render(
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
    <ArticleApresentation />
-   <Info />
+   <Main />
    <ArticleMid />
    <Footer />
   </React.StrictMode>

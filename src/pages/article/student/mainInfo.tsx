@@ -1,12 +1,9 @@
 import './mainInfo.css';
 import './estadosDiv.css';
-import Wave from './wave';
 import { motion, AnimatePresence, useScroll  } from 'framer-motion';
 import {useState} from 'react';
 import ScreenPop from './popUp/animationScreen';
-import {TextosPopUp} from './textAndImag/items';
 import Template from './insideDivs/template';
-import { globalCss, createStitches } from '@stitches/react';
 /* estilos */
 import './insideDivs/services.css';
 import './insideDivs/faculdades.css';
@@ -15,7 +12,7 @@ import './insideDivs/rock-star.css';
 import './insideDivs/star-app.css';
 import './insideDivs/pontos.css';
 
-export default function Info(props: any): JSX.Element {
+export function Estudante(props: any): JSX.Element {
   const [open, setOpen] = useState(false);  /* valores para abrir e fechar o popUp */
   /* teste para render de cada grid template */
   const [servicos, setServicos] = useState(false);
@@ -24,16 +21,23 @@ export default function Info(props: any): JSX.Element {
   const [rockstar, setRockStar] = useState(false);
   const [StarApp, setStarApp] = useState(false);
   const [pontos, setPontos] = useState(false);
-  const [movePop, setMovePop] = useState(0);
 
-function Click(servicos: boolean, faculdade: boolean, cards: boolean, rockstar: boolean, StarApp: boolean, pontos: boolean) {
- setOpen(open == true ? false : true) /* text logico antigo */
- setServicos(servicos);
- setFaculdade(faculdade);
- setCards(cards);
- setRockStar(rockstar);
- setStarApp(StarApp); 
- setPontos(pontos);
+function Click
+(
+  servicos: boolean, 
+  faculdade: boolean, 
+  cards: boolean, 
+  rockstar: boolean, 
+  StarApp: boolean, 
+  pontos: boolean
+){
+    setOpen(open == true ? false : true) 
+    setServicos(servicos);
+    setFaculdade(faculdade);
+    setCards(cards);
+    setRockStar(rockstar);
+    setStarApp(StarApp); 
+    setPontos(pontos);
 }
 
 
@@ -46,15 +50,14 @@ function reset() {
   setStarApp(false);
   setPontos(false);
 }
-
-console.log(faculdade)
  return (
-  <motion.article className="infoText">{/* article pai container */}
-   <Wave isTrue={open}/> {/* blur no texto */}
+  <aside className="container-pai-grid-estudante">{/* article pai container */}
    <motion.aside /* container grid */
      className="infoGrid" 
      variants={variant} 
-     animate={open ? 'filter' : ''}> {/* container grid info */}
+     initial={{opacity: 0}}
+     animate={[open ? 'filter' : '', "animated"]}
+     exit={{opacity: 0}}> {/* container grid info */}
     <div className="containerServices">
     <Template 
       estilo="services-container" 
@@ -122,13 +125,17 @@ console.log(faculdade)
       />
    }
    </AnimatePresence>    
-  </motion.article>
+  </aside>
  );
 };
 const variant = {
   filter: {
     filter: 'blur(1px)',
-  
+   
+  }, 
+  animated: {
+   opacity: 1,
+    y: 0,
   }
 }
 

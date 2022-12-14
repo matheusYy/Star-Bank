@@ -1,9 +1,0 @@
-.waveText {
- background-color: var(--grey);
- color: var(--fontColorLight);
- font-size: var(--fontForInfoTitle);
- position: relative;
- top: 137px;
- display: flex;
- gap: 10px;
-}

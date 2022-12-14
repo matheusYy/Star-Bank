@@ -1,4 +1,8 @@
-
+.container-pai-grid-estudante {
+ background-color: var(--grey);
+ width: 100%;
+ height: 100%;
+}
 .infoGrid {
  display: grid;
  width: 100%;
