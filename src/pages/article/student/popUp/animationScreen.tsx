@@ -6,8 +6,7 @@ import RockStar from './rockstar';
 import StarApp from './starApp';
 import Pontos from './pontos';
 import { motion } from 'framer-motion'
-import { ReactComponentElement } from 'react';
-
+import {X} from './x-desable'
 export default function Animation(props: any): JSX.Element {
 
  const variant = {
@@ -15,7 +14,7 @@ export default function Animation(props: any): JSX.Element {
    opacity: 1,
    y: [0, -7],
    transition: {
-    type: "spring", duration: 0.3, stiffeness: 100
+    type: "spring", duration: 0.3
    }
   }
  }
@@ -48,7 +47,9 @@ export default function Animation(props: any): JSX.Element {
    variants={variant}
      >
    <div className="container-items-pop-up">
-    <input type="button" value="" onClick={props.desable}/>
+    <X />
+    <span onClick={props.desable} className="container-desable-iconPopUp"/>
+    
     <div className="childPopUp">
      {
       Is()

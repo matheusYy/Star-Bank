@@ -22,6 +22,11 @@ export function Estudante(props: any): JSX.Element {
   const [StarApp, setStarApp] = useState(false);
   const [pontos, setPontos] = useState(false);
 
+  if(open) {
+    document.body.style.overflowY = 'hidden';
+  } else {
+    document.body.style.overflowY = 'auto';
+  }
 function Click
 (
   servicos: boolean, 
