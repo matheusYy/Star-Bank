@@ -1,6 +1,6 @@
 import './article.css';
 import Apresentation from './apresentation';
-import Article from '../article/mainInfo'
+
 export default function Main() {
  return (
  <article  className="containerArticleInit" data-theme="a">
