@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
 # Star-Bank, projeto pessoal
 
 Hey, esse é meu primeiro projeto criado para produção depois de quase 1 ano de estudo, as tecnologias usadas nele foram:
