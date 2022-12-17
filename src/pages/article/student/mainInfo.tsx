@@ -61,7 +61,7 @@ function reset() {
      className="infoGrid" 
      variants={variant} 
      initial={{opacity: 0}}
-     animate={[open ? 'filter' : '', "animated"]}
+     animate={["animated"]}
      exit={{opacity: 0}}> {/* container grid info */}
     <div className="containerServices">
     <Template 
@@ -134,13 +134,8 @@ function reset() {
  );
 };
 const variant = {
-  filter: {
-    filter: 'blur(1px)',
-   
-  }, 
   animated: {
    opacity: 1,
-    y: 0,
   }
 }
 

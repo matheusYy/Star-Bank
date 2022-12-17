@@ -5,8 +5,9 @@ import Cards from './cards';
 import RockStar from './rockstar';
 import StarApp from './starApp';
 import Pontos from './pontos';
-import { motion } from 'framer-motion'
-import {X} from './x-desable'
+import { motion } from 'framer-motion';
+import { X } from './x-desable';
+import './index.css';
 export default function Animation(props: any): JSX.Element {
 
  const variant = {
@@ -47,9 +48,7 @@ export default function Animation(props: any): JSX.Element {
    variants={variant}
      >
    <div className="container-items-pop-up">
-    <X />
-    <span onClick={props.desable} className="container-desable-iconPopUp"/>
-    
+    <X desable={props.desable}/>
     <div className="childPopUp">
      {
       Is()

@@ -1,0 +1,7 @@
+/* import styles das divs em popUp */
+@import './style/services.css';
+@import './style/starApp.css';
+@import './style/rockStar.css';
+@import './style/pontos.css';
+@import './style/faculdades.css';
+@import './style/cards.css';
