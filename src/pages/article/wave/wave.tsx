@@ -2,20 +2,10 @@ import './wave.css';
 import { useState, useEffect } from 'react';
 import {animate, motion} from 'framer-motion'
 export default function Wave(props: any) {
-const [estudante, setEstudante] = useState(false)
-const [empresa, setEmpresa] = useState(false); 
-const [juridica, setJuridica] = useState(false); 
-  const variant = {
-    filter: {
-      filter: "blur(1px)"
-    }
-  }
-
-console.log(props.animateEstudante)
  return (
   <>
   <div className="waveContainer">
-  <motion.div className="container-wave" variants={variant} animate={props.isTrue ? 'filter' : ''}>
+  <motion.div className="container-wave" >
     <div className="wave-text">
       <h1 onClick={props.estudanteClick}>Estudante</h1>
       <h1 onClick={props.empresaClick}>Empresa</h1>
@@ -38,7 +28,7 @@ console.log(props.animateEstudante)
 
 const animateEmphasis = {
   estudante: {
-   left: -5
+   left: -5,
   },
   empresa: {
    left: 70

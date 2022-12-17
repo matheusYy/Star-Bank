@@ -54,9 +54,22 @@
  
 } 
 .x-white-svg {
- background-color: red;
+ margin: 15px 0 5px 15px;
+ padding: 5px;
+ border-radius: 4px;
+ transition: all 0.4s ease;
+ border: 1px solid transparent;
+ fill: white;
 }
 
-#x-while {
+.x-white-svg:hover {
+ background-color: var(--darkPurple);
+ border: 1px solid white;
+ fill: black;
+}
+.x-white-svg::-ms-fill {
  background-color: red;
+}
+.x-white-svg:active {
+ background-color: var(--holePurple);
 }
