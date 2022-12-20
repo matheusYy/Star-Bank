@@ -1,6 +1,6 @@
 .containerGridApresentation {
  display: grid;
- margin: 15vh 3vw 0 3vw;
+ margin: 8vh 3vw 0 3vw;
  padding: 10px;
  grid-template-columns: 15vw 8vw 0 12vw 13vw auto 1fr 15vw auto;
  grid-template-rows: 7vh auto 3vh auto auto;
