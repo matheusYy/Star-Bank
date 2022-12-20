@@ -32,7 +32,7 @@ useEffect(() => {
    juricaClick={() => WhenClick(false, false, true)} />
  
  <AnimatePresence initial={true}>
-  <article className="container-pai-animation-info">
+  <article className="container-pai-animation-info" id="info-star">
   { estudante && 
     <Estudante key={1}/>
    }

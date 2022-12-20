@@ -1,6 +1,8 @@
 .contentIconSpan {
  display: flex;
  align-items: center;
+ gap: 11px;
+ margin: 10px;
 }
 .contentIconSpan > span:nth-of-type(1) {
  background-image: url(../../../assets/social/compartilhar.svg);

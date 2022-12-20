@@ -9,7 +9,7 @@ export default function IconRetangle() {
   </div>
   <div className="flexForIconDivTwo">
    <span className="iconSpanForDivIconTwo"></span>
-    <p>Annie</p>
+    <p>Liz</p>
    </div>
   </>
  )

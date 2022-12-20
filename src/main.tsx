@@ -1,6 +1,8 @@
 //dependecias
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
+// looader
+import Looader from './pages/looader/looader';
 //componentes
 import Header from './pages/header/header';
 import ArticleApresentation from './pages/main/article';
@@ -17,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('header') as HTMLElement).render(
 );
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
+   <Looader />
    <ArticleApresentation />
    <Main />
    <ArticleMid />
