@@ -58,4 +58,10 @@
 .contentPaiAboutTwo > aside.content-right-aboutTwo > div > aside > p:nth-child(1) {
  text-align: center;
 }
+.projetos-e-contato {
+  font-size: 0.9em;
+}
+.social {
+  font-size: 0.9em;
+}
 } 
