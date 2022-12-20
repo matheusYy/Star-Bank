@@ -1,0 +1,43 @@
+#root > article.containerArticleInit > div > div {
+ height: auto;
+ text-align: center;
+ display: grid;
+ place-items: center;
+ grid-template-columns: auto;
+ grid-template-rows: 6vh 5vh;
+ line-height: 32px;
+ margin: 50px 0 20px 0;
+};
+
+#root > article.containerArticleInit > div > div > h1 {
+ grid-row: 1/2;
+}
+
+#root > article.containerArticleInit > div > div > h2 {
+ grid-row: 2/3;
+}
+
+.divApresentation > p {
+ font-family: NiramitBold;
+ width: 90%;
+ line-height: 18px;
+ text-align: center;
+ margin-bottom: 23px;
+}
+.buttonStart {
+ background-color: #000;
+ text-align: center;
+ color: #fff;
+ border-radius: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 4px;
+ height: 40px;
+ width: 24vw;
+ cursor: pointer;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.427);
+}
+.buttonStart:hover {
+ box-shadow: 0 0 10px var(--darkPurple);
+}

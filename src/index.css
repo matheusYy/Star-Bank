@@ -1,3 +1,7 @@
+@import './pages/style/small-mobile.css';
+
+
+
 @font-face {
   font-family: "NiramitSemiBold";
   src: url("./fonts/Niramit-SemiBold.ttf") format("opentype");
