@@ -1,6 +1,6 @@
 .containerGridApresentation {
  display: grid;
- margin: 3vh 0vw 0 0vw;
+ margin: -18px 0 0 0;
  padding: 10px;
  grid-template-columns: 15vw 8vw 0 12vw 13vw auto 1fr 15vw auto;
  grid-template-rows: 7vh auto 3vh auto auto;
@@ -105,3 +105,6 @@
  background-color: var(--orange);
 }
 
+svg.heart-svg > path {
+ transition: fill 0.5s ease;
+}
