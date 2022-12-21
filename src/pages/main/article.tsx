@@ -3,6 +3,7 @@ import Apresentation from './apresentation';
 import { LineHorizontal, Line, LineRight, LineCurve} from '../lines/line';
 import { Smile } from '../lines/emoji/emoji';
 
+
 export default function Main() {
 
 function moveScroll() {
