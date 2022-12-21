@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 // looader
 import Looader from './pages/looader/looader';
 //componentes
+import { LineHorizontal } from './pages/lines/line';
 import Header from './pages/header/header';
 import ArticleApresentation from './pages/main/article';
 import { Main } from './pages/article/main';

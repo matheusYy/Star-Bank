@@ -3,6 +3,9 @@ import './apresentationTwo.css';
 import RetangleIcon from './fragmentos/retangleIcon';
 import CompartilheContent from './fragmentos/compartilheContent';
 import Social from './fragmentos/social';
+// lines decoration
+
+
 export default function Apresentaition() {
  return (
   <aside className="containerGridApresentation">

@@ -1,0 +1,10 @@
+.line-curve {
+ position: absolute;
+ left: -3px;
+ top: 92px;
+}
+.line-horizontal {
+ position: absolute;
+ top: 466px;
+ left: 50vw;
+}

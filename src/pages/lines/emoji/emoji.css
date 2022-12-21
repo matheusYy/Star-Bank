@@ -1,0 +1,12 @@
+.smile-emoji {
+ width: 53px;
+ height: 53px;
+ background-image: url(/src/assets/lines/Rectangle.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: contain;
+ position: absolute;
+ left: 339px;
+ top: 90px;
+ transform: rotate(19deg);
+}

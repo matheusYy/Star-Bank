@@ -58,12 +58,14 @@
  justify-content: center;
  gap: 4px;
  height: 40px;
- width: 24vw;
+ width: 27vw;
  cursor: pointer;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.427);
+ padding: 4px;
+ border: 0;
+ box-shadow: 0 0 10px var(--darkPurple);
 }
 .buttonStart:hover {
- box-shadow: 0 0 10px var(--darkPurple);
+ box-shadow: 0 0 10px var(--orange);
 }
 
 
@@ -76,4 +78,41 @@
  background-size: cover;
  background-repeat: no-repeat;
  top: 98vh;
+}
+/* span text init */
+
+.containerArticleInit > div > div > div > h1 > span {
+ color: blue;
+ animation: textRainbow 10s ease infinite reverse;
+}
+.line-curve > path {
+ animation: textRainbow 10s ease infinite reverse; 
+}
+
+@keyframes textRainbow {
+ 0% {
+  color: rgb(15, 12, 12);
+  fill:  rgb(15, 12, 12);
+  stroke: rgb(15, 12, 12);
+ }
+ 10% {
+  color: red;
+  fill: red;
+
+ }
+ 20% {
+  color: violet;
+  fill: violet;
+
+ }
+ 50% {
+  color: crimson;
+  fill: crimson;
+
+ }
+ 100% {
+  color: rgb(157, 96, 255);
+  fill:rgb(157, 96, 255);
+
+ }
 }
