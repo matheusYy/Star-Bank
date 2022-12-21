@@ -1,6 +1,5 @@
-@media (max-width: 500px) {
+@media (max-width: 530px) {
  
-
  .divApresentation > p {
   font-family: NiramitBold;
   line-height: 18px;
@@ -20,6 +19,18 @@
  }
  .containerGridApresentation > div:nth-of-type(4) {
   font-size: 0.9em;
+}
+.tittleContainer {
+  font-size: 2.6em;
+}
+.button-header {
+  padding: 5px;
+  width: 20vw;
+  height: 4vh;
+  border-radius: 9000px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 /* imagem  */
@@ -64,4 +75,5 @@
 .social {
   font-size: 0.9em;
 }
+
 } 
