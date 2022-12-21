@@ -2,7 +2,7 @@
  display: flex;
  flex-flow: column;
  align-items: center;
- height: 111vh;
+ height: 150vh;
 }
 
 .divApresentation {
@@ -35,13 +35,15 @@
  line-height: 1.2em;
  font-size: 2.2em;
  height: 100%;
+ grid-template-columns: auto 67px;
+ grid-template-rows: 40px auto;
 }
 .title-init {
  display: flex;
  flex-flow: column;
  justify-content: center;
  align-items: center;
- height: 20vh;
+ height: 220px;
  margin-top: 5vh;
 }
 .divApresentation > p {
@@ -63,6 +65,19 @@
  padding: 4px;
  border: 0;
  box-shadow: 0 0 10px var(--darkPurple);
+ align-self: center;
+ justify-self: center; 
+ grid-column: 2/3;
+ grid-row: 1/2;
+}
+.containerArticleInit > div > aside > svg:nth-child(1) {
+ grid-column: 1/3;
+ grid-row: 1/2;
+ align-self: center;
+ justify-self: left;
+ margin: 0px 0 0 -2%;
+ width: 55vw;
+ margin-left: -5vw;
 }
 .buttonStart:hover {
  box-shadow: 0 0 10px var(--orange);
@@ -71,13 +86,13 @@
 
 .waveContainer {
  position: absolute;
- background-image: url(../../assets/waves-layout.svg);
+ background-image: url(/src/assets/waves-layout.svg);
  width: 100%;
- height: 26vh;
+ height: 35vh;
  background-position: center;
- background-size: cover;
+ background-size: 120%;
  background-repeat: no-repeat;
- top: 98vh;
+ top: 135vh;
 }
 /* span text init */
 
@@ -88,12 +103,18 @@
 .line-curve > path {
  animation: textRainbow 10s ease infinite reverse; 
 }
+.content-button-flex {
+ display: grid;
+ grid-template-columns: repeat(3, minmax(100px, 1fr));
+ grid-template-rows: auto auto;
+ height: 19vh;
+ width: 100%;
+}
 
 @keyframes textRainbow {
  0% {
   color: rgb(15, 12, 12);
   fill:  rgb(15, 12, 12);
-  stroke: rgb(15, 12, 12);
  }
  10% {
   color: red;

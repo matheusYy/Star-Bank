@@ -20,10 +20,13 @@ export const Line = () => (
 
 );
 export const LineCurve = () => (
-<svg width="214" className="line-curve" height="65" viewBox="0 0 214 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="190" className="line-curve" height="85" viewBox="0 0 214 83" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M208 82.7735L213.774 77L208 71.2265L202.226 77L208 82.7735ZM-43.7735 6L-38 11.7735L-32.2265 6L-38 0.226497L-43.7735 6ZM209 77V16H207V77H209ZM198 5H-38V7H198V5ZM209 16C209 9.92487 204.075 5 198 5V7C202.971 7 207 11.0294 207 16H209Z" fill="black"/>
 </svg>
-
-
 );
 
+export const LineLinear = () => ( 
+<svg width="262" height="12" viewBox="0 0 262 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.191646 6.0481L5.96515 11.8216L11.7387 6.0481L5.96515 0.274593L0.191646 6.0481ZM261.739 6.0481L255.965 0.274593L250.192 6.0481L255.965 11.8216L261.739 6.0481ZM5.96515 7.0481H255.965V5.0481H5.96515V7.0481Z" fill="black"/>
+</svg>
+)
