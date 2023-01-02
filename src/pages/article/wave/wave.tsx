@@ -1,10 +1,7 @@
-import './wave.css';
-import { useState, useEffect } from 'react';
-import {animate, motion} from 'framer-motion'
+import './textAnimate.css';
+import { motion } from 'framer-motion'
 export default function Wave(props: any) {
  return (
-  <>
-  <div className="waveContainer">
   <motion.div className="container-wave" >
     <div className="wave-text">
       <h1 onClick={props.estudanteClick}>Estudante</h1>
@@ -20,9 +17,6 @@ export default function Wave(props: any) {
        variants={animateEmphasis}
       />
    </motion.div>
-  </div>
-
-  </>
  )
 }
 

@@ -2,7 +2,7 @@
  display: flex;
  flex-flow: column;
  align-items: center;
- height: 150vh;
+ height: 860px;
 }
 
 .divApresentation {
@@ -35,7 +35,7 @@
  line-height: 1.2em;
  font-size: 2.2em;
  height: 100%;
- grid-template-columns: auto 67px;
+ grid-template-columns: 30px auto 67px;
  grid-template-rows: 40px auto;
 }
 .title-init {
@@ -60,7 +60,7 @@
  justify-content: center;
  gap: 4px;
  height: 40px;
- width: 27vw;
+ width: 116px;
  cursor: pointer;
  padding: 4px;
  border: 0;
@@ -76,28 +76,15 @@
  align-self: center;
  justify-self: left;
  margin: 0px 0 0 -2%;
- width: 55vw;
+ width: 46vw;
  margin-left: -5vw;
 }
 .buttonStart:hover {
  box-shadow: 0 0 10px var(--orange);
 }
-
-
-.waveContainer {
- position: absolute;
- background-image: url(/src/assets/waves-layout.svg);
- width: 100%;
- height: 35vh;
- background-position: center;
- background-size: 120%;
- background-repeat: no-repeat;
- top: 135vh;
-}
 /* span text init */
 
 .containerArticleInit > div > div > div > h1 > span {
- color: blue;
  animation: textRainbow 10s ease infinite reverse;
 }
 .line-curve > path {
@@ -107,8 +94,17 @@
  display: grid;
  grid-template-columns: repeat(3, minmax(100px, 1fr));
  grid-template-rows: auto auto;
- height: 19vh;
+ height: 96px;
  width: 100%;
+}
+.containerArticleInit > div:nth-child(3) {
+ background-image: url(/src/assets/waves-layout.svg);
+ background-size: 120%;
+ background-repeat: no-repeat;
+ width: 100%;
+ background-position: bottom center;
+ height: 110px;
+ margin-top: -50px;
 }
 
 @keyframes textRainbow {

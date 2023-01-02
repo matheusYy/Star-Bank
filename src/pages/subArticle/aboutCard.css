@@ -2,7 +2,10 @@
  height: 72vh;
  background-color: var(--yellow);
 }
-
+.containerGridApresentation {
+ grid-template-columns: 18vw 8vw 0 12vw 13vw auto 1fr 15vw auto;
+ grid-template-rows: 5vh auto 3vh auto auto;
+}
 .content-star-home {
  padding-top: 30px;
  height: 85%;
@@ -40,13 +43,24 @@
  padding: 30px 3px 0 3px;
  font-size: 1.1em;
 }
-.content-image-cardhome > aside > button {
- width: 60%;
- height: 5vh;
+.content-image-cardhome > aside > button { /* botão */
+ width: 70%;
+ height: 35px;
  border: 0;
- border-radius: 20px;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.477);
+ border-radius: 8px;
+ box-shadow: 0 1px 0px rgb(0 0 0 / 40%);
 }
+.contentAboutArticle > aside > div > aside > p {
+ color: white;
+ text-align: center;
+}
+
 .content-about-twoAbout {
  height: 100%;
+}
+
+/* styles for buttons */
+
+.contentPaiAboutTwo > aside.content-right-aboutTwo > p {
+ color: black;
 }
