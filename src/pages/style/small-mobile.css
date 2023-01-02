@@ -1,3 +1,8 @@
+@import './small/small-mobile-two.css';
+
+
+
+
 @media (min-width: 536px) {
   .containerArticleInit > div.divApresentation > div > div > svg {
     grid-column: 1/2;
@@ -10,7 +15,14 @@
 
 
 @media (max-width: 530px) {
+
+  .containerArticleInit > div.divApresentation > div > div > h1 {
+    width: 400px;
+ }
  
+ .containerArticleInit > div.divApresentation > div > div > svg {
+  width: 117px;
+ }
  .divApresentation > p {
   font-family: NiramitBold;
   line-height: 18px;
