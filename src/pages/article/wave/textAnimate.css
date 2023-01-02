@@ -1,16 +1,13 @@
-.wave-text {
+.container-wave {
  background-color: var(--grey);
+}
+
+.wave-text {
  color: var(--fontColorLight);
  padding-left: 10px;
  font-size: 0.5em;
  display: flex;
  gap: 10px;
-}
-.container-wave {
- display: flex;
- flex-flow: column;
- position: relative;
- top: 125px;
 }
 .container-click-wave {
  display: flex;

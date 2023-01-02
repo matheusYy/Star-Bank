@@ -30,3 +30,11 @@ export const LineLinear = () => (
 <path d="M0.191646 6.0481L5.96515 11.8216L11.7387 6.0481L5.96515 0.274593L0.191646 6.0481ZM261.739 6.0481L255.965 0.274593L250.192 6.0481L255.965 11.8216L261.739 6.0481ZM5.96515 7.0481H255.965V5.0481H5.96515V7.0481Z" fill="black"/>
 </svg>
 )
+
+export const LineLinearLow = () => (
+<svg width="109" height="12" viewBox="0 0 109 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.783 6L103.01 0.226497L97.2363 6L103.01 11.7735L108.783 6ZM0.990234 7H103.01V5H0.990234V7Z" fill="black"/>
+</svg>
+
+
+)

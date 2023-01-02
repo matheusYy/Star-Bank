@@ -6,10 +6,10 @@ import Social from './fragmentos/social';
 // lines decoration
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-export default function Apresentaition() {
+export default function Apresentation() {
   const [heart, setHeart] = useState('');
   function like() {
-   setHeart(heart == '#000' ? "#ff0202" : "#000");
+   setHeart(heart == '#000' ? "#ff0202" : "#000"); 
   }
  return (
   <aside className="containerGridApresentation">

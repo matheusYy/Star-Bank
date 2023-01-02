@@ -1,8 +1,8 @@
 import './article.css';
 import Apresentation from './apresentation';
-import { LineHorizontal, LineLinear, LineCurve} from '../lines/line';
+import { LineHorizontal, LineLinear, LineLinearLow} from '../lines/line';
 import { Smile } from '../lines/emoji/emoji';
-
+import Wave from './wave';
 
 export default function Main() {
 
@@ -15,7 +15,7 @@ function moveScroll() {
     <div className="title-init">
      <div className="tittleContainer">
       <Smile />
-       <LineCurve />
+       <LineLinearLow />
        <h1><span>Apenas</span> um toque para começar</h1>
      </div>
     </div>
@@ -39,6 +39,7 @@ function moveScroll() {
   </aside>
   </div>
   <Apresentation /> {/* layout grid  */}
+  <Wave />
  </article> 
  );
 };
