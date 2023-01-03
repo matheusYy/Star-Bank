@@ -1,5 +1,3 @@
-@import './small/small-mobile-two.css';
-
 
 
 
@@ -21,7 +19,7 @@
  }
  
  .containerArticleInit > div.divApresentation > div > div > svg {
-  width: 117px;
+  width: 95px;
  }
  .divApresentation > p {
   font-family: NiramitBold;
@@ -35,8 +33,15 @@
  .containerIconDiv > div > p {
   width: 50%;
  }
+ .containerGridApresentation {
+  width: 100%;
+  border-radius: 0;
+}
 
+ .containerGridApresentation {
+  grid-template-rows: 40px 23px 41px 44px 230px;
 
+}
 /* section para os botões sociais em social */
  .containerGridApresentation > div:nth-of-type(7) {
   font-size: 0.9em;
@@ -126,12 +131,27 @@
 }
 
 .containerArticleInit {
-  height: 95vh;
+  height: 90vh;
 }
 
 .containerArticleInit > div > aside > svg:nth-child(1) {
   width: 50vw;
 }
+
+/* style para o before em cima de container info */
+
+span[data-attribute="estudante"]::before {
+  background-color: red;
+  left: -159px
+ }
+ span[data-attribute="empresa"]::before {
+  background-color: rgb(96, 96, 96);
+  left: -83px
+ }
+  span[data-attribute="juridica"]::before {
+  background-color: rgb(58, 32, 255);
+  left: 0
+ }
 /* Styles para container info */
 .infoGrid > div:nth-of-type(2) { /* Faculdades container*/
   grid-column: 1/4;
@@ -227,5 +247,12 @@
 .footer-end {
   background-color: #808080;
   height: 205px;
+}
+
+
+/* configuraçoes especificas */
+
+.containerArticleInit > div:nth-child(3) {
+  height: 118px;
 }
 }

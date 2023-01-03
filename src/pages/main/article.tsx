@@ -39,7 +39,6 @@ function moveScroll() {
   </aside>
   </div>
   <Apresentation /> {/* layout grid  */}
-  <Wave />
  </article> 
  );
 };

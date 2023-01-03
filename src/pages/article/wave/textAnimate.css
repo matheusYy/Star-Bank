@@ -1,25 +1,55 @@
-.container-wave {
- background-color: var(--grey);
-}
 
 .wave-text {
+ background-color: var(--grey);
  color: var(--fontColorLight);
  padding-left: 10px;
  font-size: 0.5em;
  display: flex;
  gap: 10px;
+ backface-visibility: hidden;
 }
 .container-click-wave {
  display: flex;
- width: 15%;
+ width: 100%;
  padding: 0 5px 0 5px;
  position: relative;
  align-items: center;
  justify-content: center;
+ background: var(--grey);
 }
 .container-click-wave::before {
  content: '';
- width: 70%;
+ width: 40px;
  height: 4px;
  background-color: var(--darkPurple);
+ position: relative;
+ left: 0;
+ transition: all 0.2s ease;
 }
+
+/* wave styled */
+.wave {
+  background-image: url(/src/assets/waves-layout.svg);
+  background-size: 115vw;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: bottom center;
+  height: 64px;
+  backface-visibility: hidden;
+  margin-top: -80px;
+ }
+
+ /* style para a animação do before span  */
+
+ span[data-attribute="estudante"]::before {
+  background-color: red;
+  left: 159px
+ }
+ span[data-attribute="empresa"]::before {
+  background-color: rgb(96, 96, 96);
+  left: 80px
+ }
+  span[data-attribute="juridica"]::before {
+  background-color: rgb(58, 32, 255);
+  left: 10px
+ }

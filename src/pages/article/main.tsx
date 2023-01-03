@@ -11,7 +11,11 @@ export const Main = (): JSX.Element => {
  const [juridica, setJuridica] = useState(false);
 
 
-function WhenClick(estudante: boolean, empresa: boolean, juridica: boolean):void {
+function WhenClick(
+ estudante: boolean, 
+ empresa: boolean, 
+ juridica: boolean):void {
+  
   setEstudante(estudante);
   setEmpresa(empresa);
   setJuridica(juridica);
@@ -29,7 +33,8 @@ useEffect(() => {
    animateJuridica={juridica}
    estudanteClick={() => WhenClick(true, false, false)}
    empresaClick={() => WhenClick(false, true, false)}
-   juricaClick={() => WhenClick(false, false, true)} />
+   juridicaClick={() => WhenClick(false, false, true)} 
+  />
  
  <AnimatePresence initial={true}>
   <article className="container-pai-animation-info" id="info-star">
