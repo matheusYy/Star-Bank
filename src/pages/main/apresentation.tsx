@@ -6,6 +6,9 @@ import Social from './fragmentos/social';
 // lines decoration
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+
+/* wave  */
+import Wave from './wave';
 export default function Apresentation() {
   const [heart, setHeart] = useState('');
   function like() {

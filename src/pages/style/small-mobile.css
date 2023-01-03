@@ -1,3 +1,8 @@
+@import './small/small-mobile-two.css';
+
+
+
+
 @media (min-width: 536px) {
   .containerArticleInit > div.divApresentation > div > div > svg {
     grid-column: 1/2;
@@ -10,7 +15,14 @@
 
 
 @media (max-width: 530px) {
+
+  .containerArticleInit > div.divApresentation > div > div > h1 {
+    width: 400px;
+ }
  
+ .containerArticleInit > div.divApresentation > div > div > svg {
+  width: 117px;
+ }
  .divApresentation > p {
   font-family: NiramitBold;
   line-height: 18px;
@@ -155,14 +167,16 @@
 
 /* styles para os cards abaixo em article depois de cashback */
 
+
 .contentAboutArticle {
-  height: 43vh;
- }
+  height: 375px;
+}
+
  .content-image-text-aboutTwo {
-  height: 63%;
+  height: 68%;
 }
 .content-div-right-about {
-    height: 52%;
+    height: 60%;
 }
 .content-text-right {
   height: 50%;
@@ -171,12 +185,12 @@
     background-position: bottom;
 }
 .contentPaiAboutTwo { /* pai de todos os container star propagandas */
-  height: 78vh;
+  height: 620px;
 }
 
 .contentAboutArticle > aside > div > aside > p:nth-child(2) {
  font-size: 1em;
- margin: 35px 0 5px 0;
+ margin: 30px 0 5px 0;
 }
 .contentPaiAboutTwo > aside:nth-child(1) > div > div.div-text-aboutTwo > p:nth-child(2){
  font-size: 1em;

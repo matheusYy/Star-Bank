@@ -4,7 +4,7 @@
 }
 .containerGridApresentation {
  grid-template-columns: 18vw 8vw 0 12vw 13vw auto 1fr 15vw auto;
- grid-template-rows: 5vh auto 3vh auto auto;
+ grid-template-rows: 40px 23px 41px 44px 241px;
 }
 .content-star-home {
  padding-top: 30px;
