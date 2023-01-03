@@ -97,15 +97,6 @@
  height: 96px;
  width: 100%;
 }
-.containerArticleInit > div:nth-child(3) {
-  background-image: url(../../assets/waves-layout.svg);
-  background-size: 115vw;
-  background-repeat: no-repeat;
-  width: 100vw;
-  background-position: bottom center;
-  height: 110px;
-  margin-top: -50px;
-}
 .containerArticleInit > div.divApresentation > div > div > svg > path {
  animation: textRainbow 10s ease infinite reverse;
 }
