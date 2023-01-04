@@ -1,0 +1,10 @@
+@media (max-width: 420px) {
+
+ .containerArticleInit > div.divApresentation > div > div > h1 {
+  width: 330px;
+}
+.containerArticleInit > div.divApresentation > div > div > svg {
+ width: 80px;
+ margin: 42px 0px 0px -62px;
+}
+}
