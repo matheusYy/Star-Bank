@@ -1,9 +1,0 @@
-@media (min-width: 536px) {
- .containerArticleInit > div.divApresentation > div > div > h1 {
-  width: 440px;
- }
- 
- .containerArticleInit > div.divApresentation > div > div > svg {
-  width: 117px;
- }
-}

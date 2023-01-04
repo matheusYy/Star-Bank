@@ -1,7 +1,10 @@
-@import './pages/style/small-mobile.css';
+/* mobile styles media */
+@import './pages/style/mobile/small-mobile.css';
+@import './pages/style/mobile/min-heigth.css';
 
+/* tablet styles media */
 
-
+/* fonts styles */
 @font-face {
   font-family: "NiramitSemiBold";
   src: url("./fonts/Niramit-SemiBold.ttf") format("opentype");
@@ -12,6 +15,7 @@
   font-weight: bold;
 }
 
+/* global styles */
 :root {
   --fontTitleOne: 2.5em;
   --fontTitleTwo: 2em;
@@ -35,7 +39,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-* {
+*, ::before, ::after {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
