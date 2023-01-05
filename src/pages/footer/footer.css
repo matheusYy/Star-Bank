@@ -14,9 +14,9 @@
 .footer-end {
  width: 100%;
  background-color: var(--dark);
- height: 75%;
+ height: auto;
  display: flex;
- justify-content: space-between;
+ padding: 10px;
 }
 .social {
  display: flex;
@@ -41,17 +41,7 @@
  gap: 5px;
  flex: 25%;
 }
-.projetos-e-contato {
- display: flex;
- flex-flow: column;
- gap: 2px;
- align-items: center;
- justify-content: center;
- margin-top: 10px;
- flex: 35%;
-}
-.projetos-e-contato > span {
- text-align: center;
-}
+
+
 /* ADD EMOJI */
 
