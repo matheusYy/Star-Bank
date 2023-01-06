@@ -66,6 +66,7 @@
  backface-visibility: hidden;
  font-family: NiramitSemiBold;
 }
+
 .input-child-sty-email {
  margin-top: 10px;
 }
@@ -90,8 +91,43 @@
 }
 
 .input-sty, button[type="submit"] {
- width: 100px;
+ width: 220px;
  height: 90px;
  border-radius: 50px;
  border: none;
+}
+/* validação de input style */
+
+input[data-validate-name="true"] {
+ background-color: red;
+}
+input[data-validate-name="false"] {
+ background-color: inherit;
+}
+input[data-validate-email="true"] {
+ background-color: red;
+}
+input[data-validate-email="false"] {
+ background-color: rgb(41, 12, 255);
+}
+textarea[data-valide-area="true"] {
+ background-color: red;
+}
+textarea[data-valide-area="false"] {
+ background-color: blue;
+}
+/* mensagem abaixo dos inputs */
+.msg-input {
+ position: relative;
+ width: 220px;
+ height: 35px;
+ background: red;
+ color: #fff;
+ font-size: 0.7em;
+}
+.msg-input > span {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
 }

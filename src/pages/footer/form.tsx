@@ -1,5 +1,17 @@
 import Social from './icon/social';
+import { useState, useEffect } from 'react';
 export default function Form() {
+const [valideNome, setValideNome] = useState('');
+const [valideEmail, setValideEmail] = useState('');
+const [valideTextArea, setTextArea] = useState('');
+
+function validate(event: any): boolean {
+ if(event.target.value == '') {
+  return true;
+ } else {
+  return false;
+ };
+};
 
  return ( 
   <aside className="footer-end">
@@ -7,7 +19,8 @@ export default function Form() {
    action="https://formsubmit.co/matheusrodrigues.yy7@gmail.com" 
    method='POST' 
    className='form-style'
-   autoComplete='off'>
+   autoComplete='off'
+    >
     <div className='input-sty input-child-sty-name'>
      <span></span>
      <input 
@@ -17,7 +30,17 @@ export default function Form() {
       placeholder="seu nome" 
       required 
       autoFocus 
-      autoComplete='off'/>
+      autoComplete='off'
+      max={25}
+      min={2}
+      data-validate-name={valideNome}
+      pattern={'^[a-zA-Z][a-zA-Z-_\.]{1,20}$'}
+      onInvalid={(event: any) => console.log(event)}
+      onInput={(event) => setValideNome(validate(event) ? 'true' : 'false') }
+      />
+      { valideNome == 'true' &&
+       <div className="msg-input"><p>É preciso preencher esse campo para continuar</p></div>
+      }
     </div>
     <div className='input-sty input-child-sty-email'>
      <span></span>
@@ -27,8 +50,13 @@ export default function Form() {
       name="email" 
       placeholder="seu email" 
       required 
+      pattern={'[a-z0-9]+@[a-z]+\.[a-z]{2,3}'}
+      max={65}
+      min={5}
       autoFocus 
-      autoComplete='off'/>
+      autoComplete='email'
+      data-validate-email={valideEmail}
+      onInput={(event) => setValideEmail(validate(event) ? 'true' : 'false') }/>
     </div>
    <input 
     type="hidden" 
@@ -36,12 +64,19 @@ export default function Form() {
     value="hey, legal! recebi o seu email, 
     entrarei em contato." />
   <div className="form-text-area">
-    <textarea name="mensagem" placeholder="sua mensagem..." cols={30} rows={30} required></textarea>
+    <textarea 
+     name="mensagem" 
+     placeholder="sua mensagem..." 
+     cols={30} rows={30} 
+     required
+     data-valide-area={valideTextArea}
+     onInput={(event) => setTextArea(validate(event) ? 'true' : 'false') }>
+    </textarea>
   </div>
    <input 
     type="hidden" 
     name="_next" 
-    value="./submit.tsx" 
+    value="./submit.html" 
     />
    <input 
     type="hidden" 
