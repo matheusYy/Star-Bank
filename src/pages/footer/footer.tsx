@@ -1,8 +1,8 @@
 import './footer.css';
 import './form.css';
-import Form from './form';
 import Icon from './icone';
 import Social from './icon/social';
+import { InputFormik } from './formulario';
 export default function wavesFooter() {
  return (
   <footer className="footer-container">
@@ -12,7 +12,10 @@ export default function wavesFooter() {
      <p>Curtiu o site?</p>
        <Icon />     
     </div>
-    <Form />
+    <div className="content-form-social">
+     <InputFormik />
+     <Social />
+    </div>
   </footer>
  )
 }

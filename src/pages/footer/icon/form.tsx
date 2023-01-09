@@ -1,4 +1,4 @@
-import Social from './icon/social';
+
 import { useState, useEffect } from 'react';
 export default function Form() {
 const [valideNome, setValideNome] = useState('');
@@ -19,8 +19,7 @@ function validate(event: any): boolean {
    action="https://formsubmit.co/matheusrodrigues.yy7@gmail.com" 
    method='POST' 
    className='form-style'
-   autoComplete='off'
-    >
+   autoComplete='off'>
     <div className='input-sty input-child-sty-name'>
      <span></span>
      <input 
@@ -35,7 +34,7 @@ function validate(event: any): boolean {
       min={2}
       data-validate-name={valideNome}
       pattern={'^[a-zA-Z][a-zA-Z-_\.]{1,20}$'}
-      onInvalid={(event: any) => console.log(event)}
+      onInvalid={(event: any) => setValideNome(validate(event) ? 'true' : 'false')}
       onInput={(event) => setValideNome(validate(event) ? 'true' : 'false') }
       />
       { valideNome == 'true' &&
@@ -90,7 +89,7 @@ function validate(event: any): boolean {
    <button type="submit">enviar</button>
   </form>
 
-  <Social />
+ 
  </aside>
  )
 }

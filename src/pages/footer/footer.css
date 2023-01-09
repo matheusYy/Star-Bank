@@ -43,5 +43,11 @@
 }
 
 
-/* ADD EMOJI */
-
+/* social e formulario */
+.content-form-social {
+ display: flex;
+ flex-flow: nowrap;
+ align-items: center;
+ justify-content: center;
+ padding: 5px;
+}

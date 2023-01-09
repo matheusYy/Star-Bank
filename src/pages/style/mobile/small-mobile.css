@@ -243,7 +243,7 @@ span[data-attribute="estudante"]::before {
   height: 10vh;
 }
 .footer-container {
-  height: 45vh;
+  height: 525px;
 }
 .footer-end {
   background-color: #1a1a1a;
